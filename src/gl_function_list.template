@@ -1,0 +1,32 @@
+// https://registry.khronos.org/OpenGL-Refpages/gl4/html/glVertexAttribPointer.xhtml
+// https://github.com/search?q=repo%3AKhronosGroup%2FOpenGL-Registry%20GL_ARRAY_BUFFER&type=code
+
+
+gl_function(glGenVertexArrays,(GLsizei n, GLuint *arrays),void)
+gl_function(glGenBuffers,(	GLsizei n,
+                                            GLuint * buffers),void)
+gl_function(glBindVertexArray,(	GLuint array),void)
+gl_function(glBindBuffer,(	GLenum target,
+                                            GLuint buffer),void)
+gl_function(glVertexAttribPointer,(	GLuint index,
+                                                    GLint size,
+                                                    GLenum type,
+                                                    GLboolean normalized,
+                                                    GLsizei stride,
+                                                    const void * pointer),void)
+gl_function(glEnableVertexAttribArray,(	GLuint index),void)    
+gl_function(glCreateShader,(GLenum shaderType),GLuint)
+gl_function(glShaderSource,(GLuint shader,
+                                                GLsizei count,
+                                                /* const */ GLchar **string,
+                                                const GLint *length
+                                ),void)
+gl_function(glCompileShader,(GLuint shader),void)
+gl_function(glCreateProgram,(void),GLuint )
+
+gl_function(glAttachShader,(	GLuint program,
+                                                    GLuint shader),void )
+gl_function(glLinkProgram,(GLuint program),void )
+gl_function(glDeleteShader,(GLuint shader),void)
+gl_function(glUseProgram,(GLuint program),void)
+gl_function(glBufferData,(GLenum target,GLsizeiptr size,const void * data,GLenum usage),void)
